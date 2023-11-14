@@ -37,7 +37,7 @@ func InitDomainCounter(path string) *DomainCounter {
 	return &DomainCounter{Path: path}
 }
 
-// Reads entire csv file but writes to string list only the given column and returns it.
+// Reads entire csv file but writes to slice only the given column and returns it.
 func (d *DomainCounter) readCSVFileColumn(columnNumber int) ([]string, error) {
 	file, err := os.Open(d.Path)
 	if err != nil {

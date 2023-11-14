@@ -6,6 +6,7 @@ import (
 	"teamworkgotests/customerimporter"
 )
 
+// Basic variables.
 var (
 	path         = "./data/customers.csv"
 	columnNumber = 2
