@@ -10,7 +10,7 @@ import (
 var (
 	path         = "./data/customers.csv"
 	columnNumber = 2
-	sortType     = customerimporter.SORT_ASCEND
+	sortType     = customerimporter.SORT_DESCEND
 )
 
 func main() {

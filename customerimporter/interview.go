@@ -106,6 +106,7 @@ func (d *DomainCounter) sortDescend() {
 // Processes all the work from reading csv file to counting and sorting the domains.
 // Returns the domain structure, which consists of the name and quantity for each domain.
 // To call this method, specify the column number of the email (counted from 0) and the sort type  (SORT.ASCEND/SORT_DESCEND).
+// ColumnNumber is not in the struct because because I assumed that you can read the same file several times with different columns.
 func (d *DomainCounter) CountEmailsByDomains(columnNumber int, sortType SortType) ([]Domain, error) {
 	start := time.Now()
 
